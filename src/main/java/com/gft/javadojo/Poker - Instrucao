@@ -1,0 +1,31 @@
+	/**
+	 * No jogo de Poker, uma mão consiste em cinco cartas que podem ser comparadas, da mais baixa para a mais alta.
+	 * 
+	 * Crie um algoritimo para identificar qual dos jogadores possuem a melhor mão.
+	 * Exemplo: calcularGanhador(cartasJogador1, cartasJogador2, cartasJogador3, cartasJogador4... etc)
+	 * 
+	 * Obs: O naipe só será considerado no caso de empate.
+	 *
+	 * Essa é a ordem para determinar qual é a melhor mão da rodada:
+	 * 
+	 * Primeira Parte:
+	 * 1 - Carta Alta: A carta de maior valor.
+	 * 2 - Um Par: Duas cartas do mesmo valor.
+	 * 3 - Dois Pares: Dois pares diferentes.
+	 * 4 - Trinca: Três cartas do mesmo valor e duas de valores diferentes.
+	 *  Atenção neste ponto, quatro cartas iguais não é a 5° prioridade, na verdade é a 8° !
+	 * 
+	 * Segunda Parte:
+	 * 5 - Straight (seqüência): Todas as carta com valores consecutivos.
+	 * 6 - Flush: Todas as cartas do mesmo naipe.
+	 * 
+	 * Terceira Parte:
+	 * 7 - Full House: Um trinca e um par.
+	 * 8 - Quadra: Quatro cartas do mesmo valor.
+	 * 9 - Straight Flush: Todas as cartas são consecutivas e do mesmo naipe.
+	 * 10 - Royal Flush: A seqüência 10, Valete, Dama, Rei, Ás, do mesmo naipe.
+	 * 11 - As cartas são, em ordem crescente de valor: 2, 3, 4, 5, 6, 7, 8, 9, 10, Valete, Dama, Rei, Ás.
+	 * 12 - Os naipes são: Ouro (D), Copa (H), Espadas (S), Paus (C)
+	 * 13 - Se dois jogadores possuem a mesma mão, vence que tiver a mão formada pelas cartas de maior valor.
+	 * 
+	 */
